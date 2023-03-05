@@ -175,8 +175,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 window.removeEventListener('scroll', onScroll)
             }
 
-            const anchors = ['home', 'cases', 'about', 'services', 'partners', 'awards', 'testimonials', 'blog', 'contacts']
-            const labels = ['home', 'Selected works', 'about me', 'services', 'My clients', 'awards', 'testimonials', 'My insights', 'get in touch']
+            const anchors = ['home', 'cases', 'about', 'services', 'blog', 'contacts']
+            const labels = ['home', 'Selected works', 'about me', 'services','My insights', 'get in touch']
 
             function setLabel(index) {
                 const label = labels[index];
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
             function progressBar(index) {
                 const progressBar = document.querySelector('.gold-line-js');
 
-                progressBar.style.height = 100 / 9 * index + '%';
+                progressBar.style.height = 100 / 6 * index + '%';
             }
 
             function animationActiveSection(index, nextIndex) {
